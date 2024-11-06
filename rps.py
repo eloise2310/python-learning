@@ -2,12 +2,10 @@
 
 import random
 
-
 def random_choice():
     choice = random.choice(["rock", "paper", "scissors"])
     return choice
     
-
 def winner(player1, player2):
     if player1 == player2:
         return "Its a tie!"
