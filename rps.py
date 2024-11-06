@@ -42,3 +42,11 @@ while True: # added BONUS to allow multiple games - whilst true, continue loopin
     if play_again != "yes":
         print("Thanks for playing!")
         break
+
+    player1 = input("Enter your choice (rock, paper, or scissors): ").lower()
+
+    # # adding this into the while True loop would allow for player 1 (me) to input the answer in the terminal
+
+    # if player1 not in ["rock", "paper", "scissors"]:
+    #     print("Invalid input! Please enter 'rock', 'paper', or 'scissors'.")
+    #     continue  # Restart the loop if the input is invalid
