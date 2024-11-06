@@ -1,4 +1,4 @@
-SAMPLE TEXT FOR WORD FREQ COUNTER
+SAMPLE TEXT FOR WORD COUNTER / WORD FREQ COUNTER
 
 Alice was beginning to get very tired of sitting by her sister
 on the bank, and of having nothing to do:  once or twice she had
