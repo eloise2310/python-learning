@@ -1,6 +1,6 @@
 # CREATING A COMPANY CLASS TO GO ALONG WITH EMPLOYEE CLASS
 
-from employeeclass import Employee # imprting the employee class from employeeclass.py
+from employeeclass import Employee, SalaryEmployee, HourlyEmployee, ComissionEmployee # imprting the employee class from employeeclass.py
 
 class Company:
     def __init__(self):
@@ -25,13 +25,13 @@ class Company:
 def main():
     my_company = Company()
 
-    employee1 = Employee("Eloise", "Wilkinson", 41000)
+    employee1 = SalaryEmployee("Eloise", "Wilkinson", 41000) # salary employee
     my_company.add_employee(employee1)
 
-    employee2 = Employee("Dominic", "Morton-Smith", 45000)
+    employee2 = HourlyEmployee("Dominic", "Morton-Smith", 25, 50) # hourly rate employee - calling the first name, last name, hours worked and hourly rate
     my_company.add_employee(employee2)
 
-    employee3 = Employee("Harry", "Styles", 100000)
+    employee3 = ComissionEmployee("Harry", "Styles", 30000, 5, 200) # comission employee - calling slary amount, sales amoutn and comission rate 
     my_company.add_employee(employee3)
 
     my_company.display_employees()

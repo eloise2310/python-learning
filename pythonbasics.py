@@ -140,6 +140,28 @@ print(my_dog.breed)
 my_dog.bark() # calling the bark method
 
 
+# creating a parent class - robot animal example
+
+class Robot:
+    def __init__(self, name):
+        self.name = name
+        self.position = [0,0] # robots position x,y coordinate starting at 0,0
+        print(f"My Name is {self.name}")
+    
+    def walk(self, x):
+        self.position[0] = self.position[0] + x
+        print(f"New Position {self.position}")
+
+# creating a child class that derives from the parent class (Robot)
+
+class Robot_Cat(Robot): # put the parent class in the perameter
+    def make_noise(self):
+        print("Meow!")
+    
+my_robot_cat = Robot_Cat("Stanley") # passing the name we want our robot cat to be called
+my_robot_cat.walk(10) # calling the parent class method to make the cat position move
+my_robot_cat.make_noise() # calling the child method to make this specific animals noise
+
 
         
             
