@@ -121,5 +121,28 @@ print(my_tuple[-1])  # Output: 50
 # Slicing a tuple (getting a subset)
 print(my_tuple[1:4])  # Output: (20, 30, 40)
 
+# CLASSES
+
+class Robot_dog: # use the 'class' key word followed by the class name
+    def __init__(self, name, breed): # the init method lets us initialise our robots - always import self and then any other perameters needed
+        self.name = name
+        self.breed = breed 
+    
+    # adding a method 
+    def bark(self):
+        print("Woof!")
+
+# main programme
+my_dog = Robot_dog("Tilly", "Labrador") # enter dogs info
+print(my_dog.name)
+print(my_dog.breed)
+
+my_dog.bark() # calling the bark method
+
+
+
+        
+            
+
 
 
