@@ -8,11 +8,9 @@
 import string # importing so we can use string.punctuation to remove punctuation
 from collections import Counter # impoting to use collections.Counter which is a class that counts the occurrences of each element in a list
 
-file = open("alice.txt", "r")
-
 def word_count(alice):
     try:
-        with open(alice, "r") as file:
+        with open("alice.txt", "r") as file:
             content = file.read()
             content = content.lower()
             content = content.translate(str.maketrans('', '', string.punctuation)) # removes punctuation 
